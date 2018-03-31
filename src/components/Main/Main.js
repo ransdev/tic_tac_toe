@@ -307,7 +307,7 @@ class Main extends React.Component {
 
 
 startListen(){
-     fetch('https://ransdev.github.io/tic_tac_toe/api/speech-to-text/token')   
+     fetch('https://secret-basin-44257.herokuapp.com/api/speech-to-text/token')   
 
   .then(function(response) {
       return response.text();
