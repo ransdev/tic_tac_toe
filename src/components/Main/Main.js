@@ -120,11 +120,11 @@ class Game extends React.Component {
  
      
      if(command !== undefined){    
-            if (command.includes("left") && (command.includes("op") || command.includes("th") )){                
+            if (command.includes("left") && (command.includes("to") || command.includes("th") )){                
                 this.makeMove(0);               
-            } else if ((command.includes("mi") || command.includes("met") || command.includes("mo") || command.includes("bu")) && (command.includes("op") || command.includes("th") )){                 
+            } else if ((command.includes("mi") || command.includes("met") || command.includes("mo") || command.includes("bu")) && (command.includes("to") || command.includes("th") )){                 
                  this.makeMove(1);             
-                } else if (command.includes("rig") &&(command.includes("op") || command.includes("th") )){                 
+                } else if (command.includes("rig") &&(command.includes("to") || command.includes("th") )){                 
                  this.makeMove(2);             
                 } else if (command.includes("left") && (command.includes("cen") || command.includes("sen") )){                 
                  this.makeMove(3);             
