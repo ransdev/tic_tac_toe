@@ -122,21 +122,21 @@ class Game extends React.Component {
      if(command !== undefined){    
             if (command.includes("left") && command.includes("to") ){                
                 this.makeMove(0);               
-            } else if ((command.includes("mi") || command.includes("met") || command.includes("mo") || command.includes("bu")) && command.includes("to") ){                 
+            } else if ((command.includes("mi") || command.includes("met") || command.includes("mo") ) && command.includes("to") ){                 
                  this.makeMove(1);             
                 } else if (command.includes("rig") && command.includes("to")){                 
                  this.makeMove(2);             
                 } else if (command.includes("left") && (command.includes("cen") || command.includes("sen") )){                 
                  this.makeMove(3);             
-                }  else if ((command.includes("mi") || command.includes("met") || command.includes("mo") || command.includes("bu")) && (command.includes("cen") || command.includes("sen") )){                 
+                }  else if ((command.includes("mi") || command.includes("met") || command.includes("mo") ) && (command.includes("cen") || command.includes("sen") )){                 
                  this.makeMove(4);             
                 } else if (command.includes("rig") && (command.includes("cen") || command.includes("sen") )){                 
                  this.makeMove(5);             
-                } else if (command.includes("left") &&  (command.includes("bot") || command.includes("bu") )){                 
+                } else if (command.includes("left") &&  command.includes("bot") ){                 
                  this.makeMove(6);             
-                } else if ((command.includes("mi") || command.includes("met") || command.includes("mo") || command.includes("bu")) && (command.includes("bot") || command.includes("bu") )){                 
+                } else if ((command.includes("mi") || command.includes("met") || command.includes("mo") ) && command.includes("bot") ){                 
                  this.makeMove(7);             
-                } else if (command.includes("rig") &&(command.includes("bot") || command.includes("bu") )){                 
+                } else if (command.includes("rig") &&command.includes("bot")){                 
                  this.makeMove(8);             
                 }
              }  
@@ -347,7 +347,7 @@ startListen(){
          CENTER LEFT, CENTER MIDDLE, CENTER RIGHT <br/>
          LEFT BOTTOM, MIDDLE BOTTOM, RIGHT BOTTOM <br/>
          Try to say words slowly and clearly because <br/> IBM watson speech may not always recognize words properly <br/>
-        
+         It fits to some similar awaited commands. <br/>       
          </p>
             <div className="filter"></div>
 
@@ -365,7 +365,7 @@ startListen(){
               <button onClick={() => window.location.reload()} className="f6 link dim ba ph3 pv2 mb2 dib  button">Restart</button>                   
                     
                      </div>                   
-                     <div> check {this.state.text} </div>
+                     <div> {this.state.text} </div>
                     
             </div>           
             </div>
