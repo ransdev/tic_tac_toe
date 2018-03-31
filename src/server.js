@@ -72,8 +72,9 @@ app.use(cors())
 var sttAuthService = new watson.AuthorizationV1(
   Object.assign(
     {
-      username: "4c78d61c-381f-4e4e-8214-1fc5548e468b", // or hard-code credentials here
-      password: "ieKur8MpLIMq"
+      username: "17affb89-33f2-472f-9871-b657252eeeaf", // or hard-code credentials here
+      password: "q8yWIkqIfjlY",
+      url: 'https://stream.watsonplatform.net/authorization/api'
     },
     vcapServices.getCredentials('speech_to_text') // pulls credentials from environment in bluemix, otherwise returns {}
   )
@@ -120,7 +121,7 @@ app.use('/api/speech-to-text/token', function(req, res) {
 //   );
 // });
 
-const port = process.env.PORT || process.env.VCAP_APP_PORT ;
+const port = process.env.PORT || process.env.VCAP_APP_PORT || 3002 ;
 app.listen(port, function() {
   console.log('Example IBM Watson Speech JS SDK client app & token server live at http://localhost:%s/', port);
 });

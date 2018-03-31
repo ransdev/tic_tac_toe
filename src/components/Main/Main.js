@@ -307,7 +307,7 @@ class Main extends React.Component {
 
 
 startListen(){
-     fetch('http://voice_app.mybluemix.net/api/speech-to-text/token')   
+     fetch('https://ransdev.github.io/tic_tac_toe/api/speech-to-text/token')   
 
   .then(function(response) {
       return response.text();
