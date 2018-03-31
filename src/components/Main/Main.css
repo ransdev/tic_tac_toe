@@ -1,0 +1,93 @@
+.background-image {
+	background-image: url("t-800.jpg");
+
+}
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  color: red;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+
+
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+
+}
+
+.status {
+  margin-bottom: 10px;
+}
+.button {
+  background-color: #999E9C;
+  color: #fff;
+  margin: 20px;
+}
+
+
+.square {
+  background-color: #000;
+  border: 1px solid #999;
+  float: left;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 80px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+  color: #999E9C;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  
+  flex-direction: column;
+
+
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.bord-metal {
+  background-color: #999E9C;
+
+}
+
+.cont{
+  display: flex;
+  flex-direction: row-reverse;
+
+
+}
+.para {
+    border-color: #999E9C;
+    
+  
+
+}
