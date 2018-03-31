@@ -364,7 +364,7 @@ startListen(){
                      <button id="stop" className="f6 link dim ba ph3 pv2 mb2 dib  button">Stop</button>                                        
               <button onClick={() => window.location.reload()} className="f6 link dim ba ph3 pv2 mb2 dib  button">Restart</button>                   
                      </div>                   
-                         
+                     <div> check {this.state.text} </div>
                     
             </div>           
             </div>
