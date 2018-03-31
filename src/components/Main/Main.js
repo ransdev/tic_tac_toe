@@ -120,23 +120,23 @@ class Game extends React.Component {
  
      
      if(command !== undefined){    
-            if (command.includes("left") && (command.includes("top") || command.includes("th") )){                
+            if (command.includes("left") && (command.includes("op") || command.includes("th") )){                
                 this.makeMove(0);               
-            } else if ((command.includes("mid") || command.includes("met") || command.includes("mo")) && (command.includes("top") || command.includes("th") )){                 
+            } else if ((command.includes("mi") || command.includes("met") || command.includes("mo")) && (command.includes("op") || command.includes("th") )){                 
                  this.makeMove(1);             
-                } else if (command.includes("right") &&(command.includes("top") || command.includes("th") )){                 
+                } else if (command.includes("rig") &&(command.includes("op") || command.includes("th") )){                 
                  this.makeMove(2);             
-                } else if (command.includes("left") && command.includes("center")){                 
+                } else if (command.includes("left") && (command.includes("cen") || command.includes("sen") )){                 
                  this.makeMove(3);             
-                }  else if ((command.includes("mid") || command.includes("met") || command.includes("mo")) && command.includes("center")){                 
+                }  else if ((command.includes("mi") || command.includes("met") || command.includes("mo")) && (command.includes("cen") || command.includes("sen") )){                 
                  this.makeMove(4);             
-                } else if (command.includes("right") && command.includes("center")){                 
+                } else if (command.includes("rig") && (command.includes("cen") || command.includes("sen") )){                 
                  this.makeMove(5);             
                 } else if (command.includes("left") &&  (command.includes("bot") || command.includes("bu") )){                 
                  this.makeMove(6);             
-                } else if ((command.includes("mid") || command.includes("met") || command.includes("mo")) && (command.includes("bot") || command.includes("bu") )){                 
+                } else if ((command.includes("mi") || command.includes("met") || command.includes("mo")) && (command.includes("bot") || command.includes("bu") )){                 
                  this.makeMove(7);             
-                } else if (command.includes("right") &&(command.includes("bot") || command.includes("bu") )){                 
+                } else if (command.includes("rig") &&(command.includes("bot") || command.includes("bu") )){                 
                  this.makeMove(8);             
                 }
              }  
